@@ -30,17 +30,18 @@
 	$: console.log(`the quantity is ${quantity}`);
 	$: {
 		console.log(`the quantity is ${quantity}`);
-		alert(`There are ${remaining} products remaining`);
+		//alert(`There are ${remaining} products remaining`);
 	}
 	$: if (quantity >= 10) {
-		alert(`You have too many items in your cart!`);
+		//alert(`You have too many items in your cart!`);
 		quantity = 9;
 	}
 
+	/* 
 	onMount(async () => {
 		const res = await fetch(`/tutorial/api/album`);
 		photos = await res.json();
-	});
+	});*/
 </script>
 
 <svelte:head>
